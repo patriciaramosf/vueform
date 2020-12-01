@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="bg-purple-100 grid-cols-3 p-20">
+    <FirstStep/>
+    <SecondStep/>
+    <ThirdStep/>
+    <FourthStep/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { store } from './store/store'
+import FirstStep from './components/firstStep.vue'
+import SecondStep from './components/secondStep.vue'
+import ThirdStep from './components/thirdStep.vue'
+import FourthStep from './components/fourthStep.vue'
 export default {
   name: 'App',
+  store,
   components: {
-    HelloWorld
-  }
+    FirstStep,
+    SecondStep,
+    ThirdStep,
+    FourthStep,
+  },
+  data(){
+    return{
+    }
+  },
+  methods:{
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  height:100vh;
 }
 </style>
