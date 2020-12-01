@@ -16,24 +16,6 @@ export const store = new Vuex.Store({
     },
      mutations:{
         updateField,
-        setBirthDate(state, birthDate){
-            state.birthDate= birthDate
-        },
-        setCountry(state, country){
-            state.country = country
-        },
-        setHobby(state, hobby){
-            state.hobby = hobby
-        },
-        setJob(state, job){
-            state.job = job
-        },
-        setMood(state, mood){
-            state.mood = mood
-        },
-        setWishes(state, wishes){
-            state.wishes = wishes
-        },
     },
     getters:{  
         getField,
